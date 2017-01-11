@@ -1,6 +1,0 @@
-<config>
-	<Server>ALEN-PC</Server>
-	<Database>PUBS_QA</Database>
-	<DataDictionaryServer>(local)</DataDictionaryServer>
-	<DataDictionaryDatabaseName>DataDictionary</DataDictionaryDatabaseName>
-</config>
