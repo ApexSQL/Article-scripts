@@ -1,0 +1,1 @@
+SELECT name,is_sparse FROM sys.database_files
