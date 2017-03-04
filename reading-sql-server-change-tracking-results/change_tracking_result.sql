@@ -1,2 +1,0 @@
-SELECT TableVersion = CHANGE_TRACKING_CURRENT_VERSION();
-SELECT * FROM Person.Address;

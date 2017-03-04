@@ -1,2 +1,0 @@
-ELECT MinVersion = 
-CHANGE_TRACKING_MIN_VALID_VERSION(OBJECT_ID('Person.Address')) 

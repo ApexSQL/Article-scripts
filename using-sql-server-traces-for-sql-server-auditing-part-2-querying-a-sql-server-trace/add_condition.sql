@@ -1,1 +1,0 @@
-StartTime > DATEADD(mi,-5,GETDATE())
