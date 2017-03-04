@@ -1,0 +1,31 @@
+string conString = "Data Source=localhost;Initial Catalog=ImageDB;
+Integrated Security=SSPI;"
+
+SqlConnection connection = new SqlConnection(conString);
+
+SqlCommand cmd = new SqlCommand("SELECT  ImageData FROM Images WHERE 
+ImageId = 1"connection);
+
+connection.Open();
+        
+SqlDataReader reader = cmd.ExecuteReader(System.Data.CommandBehavior.
+Default);
+
+            if (reader.Read())
+            {
+                byte[] fileData = (byte[])reader.GetValue(0);
+
+                using (System.IO.FileStream fs = new System.IO.FileStream(
+                    @"D:\Test\myimage.jpg"
+                    System.IO.FileMode.Create,
+                    System.IO.FileAccess.ReadWrite))
+                {
+                    using (System.IO.BinaryWriter bw = new
+System.IO.BinaryWriter(fs))
+                    {
+                        bw.Write(fileData);
+                        bw.Close();
+                    }
+                }
+
+            }

@@ -1,0 +1,3 @@
+RESTORE HEADERONLY
+FROM DISK = 'D:\Program Files\Microsoft SQL Server\MSSQL11.MSSQLSERVER\
+MSSQL\Backup\AW2012.bak'

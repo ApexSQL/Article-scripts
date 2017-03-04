@@ -1,0 +1,1 @@
+SELECT sys.fn_cdc_get_min_lsn( 'Person_Address', 'AddressLine1') 

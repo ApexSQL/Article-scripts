@@ -1,0 +1,8 @@
+USE master
+
+RESTORE DATABASE AdventureWorks2012
+FROM DISK = 'D:\Program Files\Microsoft SQL Server\MSSQL11.MSSQLSERVER\
+MSSQL\Backup\AW2012.bak'
+WITH FILE = 3
+	,REPLACE
+	,NORECOVERY;

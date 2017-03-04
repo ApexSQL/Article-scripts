@@ -1,0 +1,1 @@
+DBCC CHECKTABLE ("Production.Illustration")
