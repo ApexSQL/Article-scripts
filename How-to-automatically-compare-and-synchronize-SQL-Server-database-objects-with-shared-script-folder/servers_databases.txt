@@ -1,5 +1,0 @@
-Server1,Database1
-Server2,Database2
-Server3,Database3
-Server4,Database4
-Server5,Database5
